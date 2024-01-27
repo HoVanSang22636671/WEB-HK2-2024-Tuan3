@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0 auto;
+            margin: o auto;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 900px;
+        }
+
+        .header {
+            height: 10%;
+            width: 100%;
+            background-color: #ad4c15;
+            display: flex;
+            align-items: center;
+            text-shadow: -5px -1px 6px #fff;
+
+        }
+
+        .title {
+            color: #808001;
+            margin-left: 40px;
+            font-size: 55px;
+        }
+
+        .nav {
+            display: flex;
+            height: 5%;
+            border: 2px solid #000;
+        }
+
+        .nav li {
+            list-style-type: none;
+            height: 100%;
+            display: inline-block;
+            line-height: 45px;
+            margin: 0 35px;
+        }
+
+        .nav li:hover a {
+            color: #ad4c15;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            text-decoration: none;
+            font-size: 25px;
+            color: #b78b76
+        }
+
+        .content {
+            width: 100%;
+            height: 75%;
+        }
+
+        .content-img {
+            height: 25%;
+            width: 100%;
+            background-image: url("./img/line.png");
+            background-size: contain;
+        }
+
+        .content-nav {
+            display: inline-flex;
+        }
+
+        .nav-left {
+            flex: 3;
+        }
+
+        .nav-right {
+            border-left: 1px solid #9f8750;
+            flex: 1;
+        }
+
+        .nam-sign-up {
+            font-size: 55px;
+            font-weight: bold;
+            color: #9f8750;
+        }
+
+        .desc {
+            margin-left: 50px;
+            max-width: 500px; 
+            margin-top: 20px; 
+            font-size: 20px;
+        }
+
+        .nav-left form {
+            margin-left: 50px;
+        }
+
+        .nav-left form input {
+            margin-bottom: 20px;
+            height: 30px;
+            width: 80%;
+            margin-right: 50px;
+            border: none; /* Loại bỏ border mặc định */
+            border-bottom: 2px solid #000; /* Thêm border bên dưới */
+            background-color: transparent; /* Tạo nền trong suốt */
+            outline: none; 
+        }
+
+        .sub {
+            background-color: #817c05;
+            width: 110px;
+            height: 30px;
+            color: #fff;
+            border: none;
+        }
+
+        .links {
+            width: 85%;
+            height: 50%;
+            background-color: #faebd8;
+            border-radius: 20px 20px 0 0;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+        .links h1 {
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        .links li {
+            margin-left: 50px;
+            color: rgb(206,162,134);
+        }
+
+        .infor {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background-color: #fff;
+            height: 10%;
+            width: 100%;
+            position: relative;
+        }
+
+        .img1 {
+            position: absolute;
+            top: 0%;
+            left: 0;
+        }
+        
+        .img2 {
+            position: absolute;
+            top: 45%;
+            left: 0;
+        }
+
+        .img3 {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+
+        .img4 {
+            position: absolute;
+            top: 41%;
+            right: 0%;
+        }
+
+        .foot1{
+            position: absolute;
+            top: 0%;
+            left: 64%;
+        }
+
+        .foot2 {
+            position: absolute;
+            top: 0%;
+            left: 37%;
+        }
+
+        .foot3 {
+            position: absolute;
+            top: 0%;
+            left: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="title">AUTUMN TRAVEL COMPANY</h1>
+        </div>
+
+        <div class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Order</a></li>
+        </div>
+
+        <div class="content">
+            <div class="content-img"></div>
+
+            <div class="content-nav">
+                <div class="nav-left">
+                    <p class="nam-sign-up">
+                        Sign up for membership benefits
+                    </p>
+
+                    <p class="desc">
+                        Our philisophical are transparency, respect,
+	                    formality and responsibility. Our stimulus is your enthusiasm. 
+	                    Our motto is your satisfation.
+                    </p>
+
+                    <form action="">
+                        <input type="text" name="txt" id="txt" placeholder="Username"><br>
+                        <input type="email" name="email" id="email" placeholder="E-mail"><br>
+                        <input type="password" name="pass" id="pass" placeholder="Password"><br>
+                        <input type="password" name="rpass" id="rpass" placeholder="Retype password"><br>
+                        <button class="sub">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+
+                <div class="nav-right">
+                    <div class="links">
+                        <h1>Links</h1>
+
+                        <ul style="list-style-type: square;">
+                            <li>Make your Own Tour</li>
+                            <li>Rusia Tours</li>
+                            <li>Europe Tours</li>
+                            <li>Nature & Adventure</li>
+                            <li>Maldives Tours</li>
+                            <li>Rusia Tours</li>
+                        </ul>
+                    </div>
+
+                    <div class="infor">
+                        <h1>More Info</h1>
+                        <img src="./img/leaf.png" alt="" style="float: left;width: 100px; margin: 10px;">
+                        <p style="color: #000; line-height: 30px;">More Info
+                            Our purpose is the client who gives to us the opportunites to serve and to make known the reality arround the world</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="./img/corner1.png" alt="" style="width: 127px;" class="img1">
+            <img src="./img/corner2.png" alt="" style="width: 110px;" class="img2">
+            <img src="./img/corner3.png" alt="" style="width: 106px;" class="img3">
+            <img src="./img/corner4.png" alt="" style="width: 107px;" class="img4">
+
+            <img src="./img/footer.png" alt="" class="foot1">
+            <img src="./img/footer.png" alt="" class="foot2">
+            <img src="./img/footer.png" alt="" class="foot3">
+        </div>
+    </div>
+</body>
+</html>

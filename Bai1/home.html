@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrapper {
+            height: 1020px;
+            width: 100%;
+            background-image: linear-gradient(#6bc9eb,#5da5ef);
+        }
+        
+        .header {
+            height: 100px;
+            position: relative;
+            border-bottom: 5px dotted #fff;
+        }
+        
+        .nav {
+            float: left;
+            width: 75%;
+        }
+        
+        .nav li {
+            float: left;
+            list-style-type: none;
+            text-align: center;
+            height: 100px;
+            width: 15%;
+        }
+        
+        .nav li a {
+            text-decoration: none;
+            line-height: 100px;
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+        }
+        
+        .title h2 {
+            position: absolute;
+            font-size: 60px;
+            right: 50px;
+            font-weight: bold;
+            color: azure;
+            text-shadow: blue 0px 0px 15px;
+            line-height: 100px;
+        }
+
+        .content {
+            width: 100%;
+            margin: 30px 0;
+            display: flex;
+        }
+
+        .left {
+            width: 50%;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .name {
+            margin: 10px 0;
+            font-size: 60px;
+            color: #fff;
+        }
+
+        .left p {
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .input {
+            margin: 0px 60px;
+            min-width: 80px;
+            display: inline-block;
+        }
+
+        .input b {
+            color: #fff;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        .input input {
+            border-radius: 5px;
+            width: 400px;
+            height: 40px;
+        }
+
+        table tr{
+            margin: 10px;
+        }
+
+        .input select {
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        td {
+            width: 340px;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .input .rq {
+            height: 160px;
+        }
+
+        .input .submit {
+            height: 40px;
+            width: 50px;
+        }
+
+        .input .reset {
+            height: 40px;
+            width: 50px;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .infor {
+            text-align: center;
+        }
+        .img {
+            margin-top: 20px;
+            width: 700px;
+        }
+
+        .letter {
+            margin-left: 80px;
+        }
+        .style {
+            text-shadow: blue 5px 5px 1px;
+        font-size: 50px;
+        color: blue;
+        }
+
+        .des {
+            font-size: 35px;
+            color: blue;
+            font-weight: bold;  
+            margin-left: 30px;
+        }
+
+        .footer {
+            border-top: 5px dotted #fff;
+            text-align: center;
+
+        }
+
+        .footer b {
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="title">
+                <h2>Sky World</h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h3 class="name">Registration Information</h3>
+
+                <p>Start your travel planning now with our on-line tour regstration
+                    form. Just tell us a little about yourself and your group and one of our travel
+                    experts will contact  you  to create the perfect custom built for your group's needs .</p>
+                
+                <div class="input">
+                    <table>
+                        <tr>
+                            <td><label for="">Title</label></td>
+                            <td><select name="title-selc" id="">
+                                <option value="1">Mr</option>
+                                <option value="2">Mrs</option>
+                                <option value="3">Ms</option>
+                            </select></td>
+
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label for="">Full name * </label> <br></td>
+                            <td><input type="text" placeholder="First name" name="full-name" required></td>
+                            
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label for="">Mailing Address</label></td>
+                            <td><input type="text" placeholder="Mailing address" name="mailing-address" required></td>
+                        </tr>
+                           
+                        <tr>
+                            <td><label for="">City</label></td>
+                            <td> <input type="text" placeholder="City" name="city" required></td>
+                        </tr>
+    
+                        <tr>
+                            <td><label for="">Country</label></td>
+                            <td><input type="text" placeholder="Country" name="country" required></td>
+                        </tr>
+    
+                        <tr>
+                            <td><label for="">Specific questions or requests about your tour</label></td>
+                            <td><input class="rq" type="text" placeholder="Specific questions or requests about your tour" name="requests" required></td>
+                        </tr>
+
+                        <tr>
+                            <td>  </td>
+                            <td>
+                                <button class="submit">Submit</button>
+                                <button class="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <div class="infor">
+                    <img src="./sky.png" alt="" class="img" >
+
+                    <div class="letter">
+                        <h2 class="style">Your've arrived.</h2>
+
+                        <p class="des">Journeys as great as the destinations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <br>
+            <b class="ft1">2016 Sky World Tours. All rights reserved.</b>
+            <br>
+            <b class="ft2">Contact information: Student Name | StudentID | Testing Date 
+            </b>
+        </div>
+    </div>
+</body>
+
+</html>
